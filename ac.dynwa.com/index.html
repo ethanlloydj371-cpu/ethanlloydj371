@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AC-GAMES</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="prod-css/index.css">
+    <script src="./assets/js/swiper-element-bundle.min.js"></script>
+      <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+        window.googletag = window.googletag || { cmd: [] };
+
+        let anchorSlot = null;
+
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/23348498264/ac_dynwa_Web_Banner_300x50_1', [320, 50], 'div-gpt-ad-1777451754510-0').addService(googletag.pubads());
+            googletag.defineSlot('/23348498264/ac_dynwa_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1777451710207-0').addService(googletag.pubads());
+
+                        // 网页插屏广告
+            interstitialSlot = googletag.defineOutOfPageSlot(
+                '/23348498264/ac_dynwa_Web_Interstitial_1',
+                googletag.enums.OutOfPageFormat.INTERSTITIAL
+            );
+            if (interstitialSlot) {
+                interstitialSlot.addService(googletag.pubads());
+            }
+
+            // 底部锚定广告
+            anchorSlot = googletag.defineOutOfPageSlot(
+                '/23348498264/ac_dynwa_Web_Anchor_1',
+                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            );
+            if (anchorSlot) {
+                anchorSlot.addService(googletag.pubads());
+            }
+
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+
+            googletag.display('div-gpt-ad-1777451754510-0');
+            googletag.display('div-gpt-ad-1777451710207-0');
+
+            if (interstitialSlot) {
+                googletag.display(interstitialSlot);
+            }
+
+            if (anchorSlot) {
+                googletag.display(anchorSlot);
+            }
+        });
+
+        function showInterstitial() {
+            if (interstitialSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(interstitialSlot);
+                });
+            }
+        }
+
+        function showAnchor() {
+            if (anchorSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(anchorSlot);
+                });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="indexPage loadingAnimation" id="indexPage">
+
+        <header class="header">
+            <div class="top-bar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo" title="Logo">
+                </div>
+                <a href="search.html" class="search-bar">
+                    <div class="icon">🔍</div>
+                    <div class="search-text">Search games...</div>
+                </a>
+
+                <div class="menu-icons" onclick="switchMenu()">
+                    <img class="icon" src="./assets/fenlei.png" alt="Menu" title="Menu">
+                </div>
+            </div>
+            <div class="menuFloatContent hidden">
+            </div>
+        </header>
+
+        <div id="div-gpt-ad-1777451754510-0" style="min-width: 320px; min-height: 50px;"></div>
+        <main class="main-content">
+            <div class="container">
+                <section class="banner-section">
+                    <swiper-container class="gameSwiper" navigation="true" pagination="true" pagination-clickable="true" space-between="10"
+                        slides-per-view="3">
+                    </swiper-container>
+                </section>
+
+                <!-- Game Statistics -->
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Total Games</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Players</div>
+                    </div>
+                    <div class="stat-item random-game">
+                        <div class="stat-icon">🎲</div>
+                        <div class="stat-label">Play Random</div>
+                    </div>
+                </div>
+
+                <div id="div-gpt-ad-1777451710207-0" style="min-width: 300px; min-height: 250px;"></div>
+                <section class="hot font2">
+                    <div class="section-header">
+                        <h2>
+                            <span>HOT GAMES</span>
+                            <div class="hot-tags">
+                                <span class="tag">Action</span>
+                                <span class="tag">Adventure</span>
+                                <span class="tag">Strategy</span>
+                            </div>
+                        </h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="hotGameGridBox">
+
+
+                    </div>
+                </section>
+
+                <!-- Game Recommendations -->
+                <div class="game-recommendation">
+                    <div class="recommendation-header">
+                        <h3>💡 Recommended For You</h3>
+                        <button class="refresh-btn">Refresh</button>
+                    </div>
+                    <div class="recommendation-content">
+                        <!-- Will be filled by JavaScript -->
+                    </div>
+                </div>
+
+                <section class="newGame font2">
+                    <h2>NEW RELEASES</h2>
+                    <div class="newGameGridBox">
+
+                    </div>
+                </section>
+
+                <!-- Popular Tags -->
+                <div class="tag-cloud">
+                    <h3>Popular Tags</h3>
+                    <div class="tags">
+                        <span class="tag">Action Adventure</span>
+                        <span class="tag">Casual</span>
+                        <span class="tag">Strategy</span>
+                        <span class="tag">Shooter</span>
+                        <span class="tag">Puzzle</span>
+                        <span class="tag">RPG</span>
+                        <span class="tag">Racing</span>
+                        <span class="tag">Sports</span>
+                        <span class="tag">Multiplayer</span>
+                        <span class="tag">Single Player</span>
+                    </div>
+                </div>
+
+                <!-- <section class="threeD font2">
+                    <h2>
+                        <span>3D GAMES</span>
+                        <a href="search.html?category=3D" class="more-link">more &gt;</a>
+                    </h2>
+                    <div class="threeDGameGridBox">
+
+                    </div>
+                </section> -->
+
+                <!-- Latest Events -->
+                <div class="game-announcements">
+                    <div class="announcement-header">
+                        <h3>📢 Latest Events</h3>
+                    </div>
+                    <div class="announcement-list">
+                        <div class="announcement-item">
+                            <span class="date">12-25</span>
+                            <span class="title">Christmas Special Event</span>
+                            <span class="badge">New</span>
+                        </div>
+                        <div class="announcement-item">
+                            <span class="date">12-20</span>
+                            <span class="title">Winter Game Festival</span>
+                        </div>
+                        <div class="announcement-item">
+                            <span class="date">12-15</span>
+                            <span class="title">New Games Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="Adventure font2">
+                    <h2>
+                        <span>ADVENTURE</span>
+                        <a href="search.html?category=Adventure" class="more-link">more &gt;</a>
+                    </h2>
+                    <div class="AdventureGameGridBox">
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="site-info-area font1">
+            <h2>If you enjoy our site, learn more about GAME!</h2>
+            <p>
+                Discover a world of exciting challenges online at GAME, the ultimate
+                destination for amazing games designed for girls, boys, and kids with
+                diverse interests! Our website offers a vast collection of free games,
+                accessible on mobile phones, tablets, computers, and laptops.
+            </p>
+            <p>
+                Experience cutting-edge technology with HTML5 games, ensuring seamless
+                play on mobile devices. Just connect to the internet, visit GAME via
+                Google, and start playing with friends.
+            </p>
+        </div>
+
+        <div class="shengming font1">
+            <h3>About Us</h3>
+            <div>
+                User Responsibility: Users shall bear full responsibility for the
+                content they provide in accordance with the law, and the platform shall
+                not assume any responsibility.
+            </div>
+            <div class="policy">
+                <a href="./PrivacyPolicy.html">Privacy Policy</a>
+                <span class="divider">|</span>
+                <a href="./TermsofService.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            showAnchor();
+            // 例如 5 秒后展示一次插屏（正式上线不建议太暴力，看你需求）
+            setTimeout(function () {
+                showInterstitial();
+            }, 1000);
+        });
+    </script>
+</body>
+<script type="module">
+    import { getGamesListApi } from "./assets/js/business.js";
+    let gamesListIndex = 0
+    let GameList = await getGamesListApi({ num: 20 });
+    GameList.slice(0, gamesListIndex += 10).forEach((item) => {
+        const swiperSlide = document.createElement('swiper-slide');
+        swiperSlide.innerHTML = `
+        <a href="play.html?title=${item.title}">
+            <img src="${item.thumb}" alt="">
+        </a>`;
+        document.querySelector('.gameSwiper').appendChild(swiperSlide);
+    });
+
+    let hotGameList = GameList.slice(gamesListIndex, gamesListIndex += 3)
+    hotGameList.forEach((item) => {
+        const hotGameItem = document.createElement('div');
+        hotGameItem.className = 'game-item';
+        hotGameItem.innerHTML = `
+            <a href="play.html?title=${item.title}">
+                <img src="${item.thumb}" alt="">
+                <div class="font3 nameBox">${item.title}</div>
+            </a>
+      `;
+
+        document.querySelector('.hotGameGridBox').appendChild(hotGameItem);
+
+
+    })
+
+    let newGameList = GameList.slice(gamesListIndex, gamesListIndex += 6)
+    newGameList.forEach((item) => {
+        const newGameItem = document.createElement('div');
+        newGameItem.className = 'game-item';
+        newGameItem.innerHTML = `
+            <a href="play.html?title=${item.title}">
+                <img src="${item.thumb}" alt="">
+                 <div class="font3 nameBox">${item.title}</div>
+            </a>
+            `;
+        document.querySelector('.newGameGridBox').appendChild(newGameItem);
+    })
+
+
+    // let threeDGameList = await getGamesListApi({ num: 12, category: 3 });
+    // threeDGameList.forEach((item) => {
+    //     const threeDGameItem = document.createElement('div');
+    //     threeDGameItem.className = 'game-item';
+    //     threeDGameItem.innerHTML = `
+    //         <a href="play.html?title=${item.title}">
+    //             <img src="${item.thumb}" alt="">
+    //         </a>
+    //         `;
+
+
+    //     document.querySelector('.threeDGameGridBox').appendChild(threeDGameItem);
+    // })
+
+    // 关闭首评加载动画的时机
+    document.querySelector('.indexPage').classList.toggle('loadingAnimation', false)
+    
+
+    let AdventureGameList = await getGamesListApi({ num: 12, category: 4 });
+    AdventureGameList.forEach((item) => {
+        const AdventureGameItem = document.createElement('div');
+        AdventureGameItem.className = 'game-item';
+        AdventureGameItem.innerHTML = `
+            <a href="play.html?title=${item.title}">
+                <img src="${item.thumb}" alt="">
+            </a>
+            `;
+
+
+        document.querySelector('.AdventureGameGridBox').appendChild(AdventureGameItem);
+    })
+    import("./assets/js/business.js").then((res) => {
+        let menuFloatContent = document.querySelector('.menuFloatContent')
+        res.getGamesListCategory
+            .forEach((item) => {
+                let div = document.createElement('div')
+                div.className = 'categoryItem font1'
+                div.innerHTML = `
+            <a href="search.html?category=${item}">${item}</a>
+            `
+                menuFloatContent.appendChild(div)
+            })
+    })
+
+    window.switchMenu = function () {
+        document.querySelector('.menuFloatContent').classList.toggle('hidden')
+
+    }
+
+    // 添加游戏推荐功能
+    function updateRecommendations() {
+        const recommendationContent = document.querySelector('.recommendation-content');
+        const randomGames = GameList.sort(() => 0.5 - Math.random()).slice(0, 4);
+        
+        recommendationContent.innerHTML = '';
+        randomGames.forEach(game => {
+            const gameElement = document.createElement('div');
+            gameElement.className = 'recommended-game';
+            gameElement.innerHTML = `
+                <a href="play.html?title=${game.title}">
+                    <img src="${game.thumb}" alt="${game.title}">
+                    <div class="game-info">
+                        <div class="game-title">${game.title}</div>
+                        <div class="game-category">Popular Game</div>
+                    </div>
+                </a>
+            `;
+            recommendationContent.appendChild(gameElement);
+        });
+    }
+
+    // 初始化推荐
+    updateRecommendations();
+
+    // 绑定刷新按钮事件
+    document.querySelector('.refresh-btn').addEventListener('click', updateRecommendations);
+
+    // 修改随机游戏功能的绑定
+    document.querySelector('.random-game').addEventListener('click', () => {
+        const randomGame = GameList[Math.floor(Math.random() * GameList.length)];
+        window.location.href = `play.html?title=${randomGame.title}`;
+    });
+</script>
+
+<!-- gtag -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2TER60S33"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K2TER60S33');
+</script>
+
+        
+
+</html>

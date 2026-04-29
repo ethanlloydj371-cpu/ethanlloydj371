@@ -1,0 +1,77 @@
+锚定：header
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23348498264/dw_dynwa_Web_Anchor_1', ['fluid'], 'div-gpt-ad-1777452290396-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23348498264/dw_dynwa_Web_Anchor_1 -->
+<div id='div-gpt-ad-1777452290396-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1777452290396-0'); });
+  </script>
+</div>
+
+
+
+WebBanner 300X250:
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23348498264/dw_dynwa_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1777452360476-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23348498264/dw_dynwa_Web_Banner_300x250_1 -->
+<div id='div-gpt-ad-1777452360476-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1777452360476-0'); });
+  </script>
+</div>
+
+
+WebBanner 320X50：
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23348498264/wt_dynwa_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1777452402393-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23348498264/wt_dynwa_Web_Banner_320x50_1 -->
+<div id='div-gpt-ad-1777452402393-0' style='min-width: 320px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1777452402393-0'); });
+  </script>
+</div>
+
+
+
+WebBanner Interstitial:
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23348498264/dw_dynwa_Web_Interstitial_1', ['fluid'], 'div-gpt-ad-1777452431344-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /23348498264/dw_dynwa_Web_Interstitial_1 -->
+<div id='div-gpt-ad-1777452431344-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1777452431344-0'); });
+  </script>
+</div>
