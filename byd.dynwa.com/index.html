@@ -4,12 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DW - GAMES</title>
+    <title>BY-GAMES</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/index.css">
     <script src="./assets/js/swiper-element-bundle.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2612403516171637"
-     crossorigin="anonymous"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+        window.googletag = window.googletag || { cmd: [] };
+
+        let anchorSlot = null;
+
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/23348498264/byd_dynwa_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1777452209602-0').addService(googletag.pubads());
+            googletag.defineSlot('/23348498264/byd_dynwa_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1777452173895-0').addService(googletag.pubads());
+
+                        // 网页插屏广告
+            interstitialSlot = googletag.defineOutOfPageSlot(
+                '/23348498264/byd_dynwa_Web_Interstitial_1',
+                googletag.enums.OutOfPageFormat.INTERSTITIAL
+            );
+            if (interstitialSlot) {
+                interstitialSlot.addService(googletag.pubads());
+            }
+
+            // 底部锚定广告
+            anchorSlot = googletag.defineOutOfPageSlot(
+                '/23348498264/byd_dynwa_Web_Anchor_1',
+                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            );
+            if (anchorSlot) {
+                anchorSlot.addService(googletag.pubads());
+            }
+
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+
+            googletag.display('div-gpt-ad-1777452209602-0');
+            googletag.display('div-gpt-ad-1777452173895-0');
+
+            if (interstitialSlot) {
+                googletag.display(interstitialSlot);
+            }
+
+            if (anchorSlot) {
+                googletag.display(anchorSlot);
+            }
+        });
+
+        function showInterstitial() {
+            if (interstitialSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(interstitialSlot);
+                });
+            }
+        }
+
+        function showAnchor() {
+            if (anchorSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(anchorSlot);
+                });
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -67,6 +125,8 @@
 
         </header>
 
+        <div id="div-gpt-ad-1777452209602-0" style="min-width: 320px; min-height: 50px;"></div>
+
         <swiper-container init="false" class="gameSwiper" navigation="false" pagination="true"
             pagination-clickable="true" space-between="10" slides-per-view="1" breakpoints='{
             "1200": {
@@ -78,15 +138,7 @@
         }'>
         </swiper-container>
 
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-2612403516171637"
-            data-ad-slot="2091213696"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <div id="div-gpt-ad-1777452173895-0" style="min-width: 300px; min-height: 250px;"></div>
 
         <main class="main-content">
 
@@ -196,6 +248,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            showAnchor();
+            // 例如 5 秒后展示一次插屏（正式上线不建议太暴力，看你需求）
+            setTimeout(function () {
+                showInterstitial();
+            }, 1000);
+        });
+    </script>
+
 </body>
 <script type="module">
     import { getGamesListApi } from "./assets/js/business.js";
@@ -407,13 +470,13 @@
 <!-- gtag -->
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFLXPLZ1EB"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RX29S5QK4G"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-TFLXPLZ1EB');
+  gtag('config', 'G-RX29S5QK4G');
 </script>
 
         

@@ -4,17 +4,77 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DW - GAMES</title>
+    <title>BY-GAMES</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="prod-css/play.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2612403516171637"
-     crossorigin="anonymous"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+        window.googletag = window.googletag || { cmd: [] };
+
+        let anchorSlot = null;
+
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/23348498264/byd_dynwa_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1777452209602-0').addService(googletag.pubads());
+            googletag.defineSlot('/23348498264/byd_dynwa_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1777452173895-0').addService(googletag.pubads());
+
+                        // 网页插屏广告
+            interstitialSlot = googletag.defineOutOfPageSlot(
+                '/23348498264/byd_dynwa_Web_Interstitial_1',
+                googletag.enums.OutOfPageFormat.INTERSTITIAL
+            );
+            if (interstitialSlot) {
+                interstitialSlot.addService(googletag.pubads());
+            }
+
+            // 底部锚定广告
+            anchorSlot = googletag.defineOutOfPageSlot(
+                '/23348498264/byd_dynwa_Web_Anchor_1',
+                googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+            );
+            if (anchorSlot) {
+                anchorSlot.addService(googletag.pubads());
+            }
+
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+
+            googletag.display('div-gpt-ad-1777452209602-0');
+            googletag.display('div-gpt-ad-1777452173895-0');
+
+            if (interstitialSlot) {
+                googletag.display(interstitialSlot);
+            }
+
+            if (anchorSlot) {
+                googletag.display(anchorSlot);
+            }
+        });
+
+        function showInterstitial() {
+            if (interstitialSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(interstitialSlot);
+                });
+            }
+        }
+
+        function showAnchor() {
+            if (anchorSlot) {
+                googletag.cmd.push(function () {
+                    googletag.display(anchorSlot);
+                });
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div class="playPage loadingAnimation" id="playPage">
         <div class="gameBanner" onclick="gotoPlayGame()">
             <img  class="bgdimg gameImgUrl" src="" alt="" />
+
+            <div id="div-gpt-ad-1777452209602-0" style="min-width: 320px; min-height: 50px;"></div>
 
             <div class="gameBannerbox">
                 <img class="mainImg gameImgUrl" src="./assets/placeholder.svg" alt="" srcset="" />
@@ -37,17 +97,8 @@
                         <div class="font08 gameMsgNum"></div>
                     </div>
                 </div>
-                <div style="width: 300px; height: 250px; text-align: center;">
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-2612403516171637"
-                        data-ad-slot="2091213696"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+
+                <div id="div-gpt-ad-1777452173895-0" style="min-width: 300px; min-height: 250px;"></div>
 
                 <div class="playButton font3" onclick="gotoPlayGame()">
                     <img src="./assets/kaishi.png" alt="">
@@ -122,13 +173,13 @@
 <!-- gtag -->
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFLXPLZ1EB"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RX29S5QK4G"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-TFLXPLZ1EB');
+  gtag('config', 'G-RX29S5QK4G');
 </script>
 
         
