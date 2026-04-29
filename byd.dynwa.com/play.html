@@ -17,15 +17,6 @@
             googletag.defineSlot('/23348498264/byd_dynwa_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1777452209602-0').addService(googletag.pubads());
             googletag.defineSlot('/23348498264/byd_dynwa_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1777452173895-0').addService(googletag.pubads());
 
-                        // 网页插屏广告
-            interstitialSlot = googletag.defineOutOfPageSlot(
-                '/23348498264/byd_dynwa_Web_Interstitial_1',
-                googletag.enums.OutOfPageFormat.INTERSTITIAL
-            );
-            if (interstitialSlot) {
-                interstitialSlot.addService(googletag.pubads());
-            }
-
             // 底部锚定广告
             anchorSlot = googletag.defineOutOfPageSlot(
                 '/23348498264/byd_dynwa_Web_Anchor_1',
@@ -42,22 +33,12 @@
             googletag.display('div-gpt-ad-1777452209602-0');
             googletag.display('div-gpt-ad-1777452173895-0');
 
-            if (interstitialSlot) {
-                googletag.display(interstitialSlot);
-            }
 
             if (anchorSlot) {
                 googletag.display(anchorSlot);
             }
         });
 
-        function showInterstitial() {
-            if (interstitialSlot) {
-                googletag.cmd.push(function () {
-                    googletag.display(interstitialSlot);
-                });
-            }
-        }
 
         function showAnchor() {
             if (anchorSlot) {
@@ -117,6 +98,12 @@
             </div>
         </a>
     </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            showAnchor();
+        });
+    </script>
 </body>
 <script type="module">
     import { getGamesListApi, getGamesListCategory } from "./assets/js/business.js";
