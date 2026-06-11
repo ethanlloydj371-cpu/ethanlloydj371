@@ -7,66 +7,16 @@
   <title>dynwa.com</title>
   <link rel="icon" href="logo.png" />
   <link rel="stylesheet" href="prod-css/index.css" />
-  <script src="./assets/js/swiper-element-bundle.min.js"></script>
-  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+  <!-- TikTok Pixel Code Start -->
   <script>
-      window.googletag = window.googletag || { cmd: [] };
-
-      let anchorSlot = null;
-
-      googletag.cmd.push(function () {
-          googletag.defineSlot('/23348498264/dynwa_Web_Banner_320x50_1', [320, 50], 'div-gpt-ad-1777364426429-0').addService(googletag.pubads());
-          googletag.defineSlot('/23348498264/dynwa_Web_Banner_300x250_1', [300, 250], 'div-gpt-ad-1777362616283-0').addService(googletag.pubads());
-
-                      // 网页插屏广告
-          interstitialSlot = googletag.defineOutOfPageSlot(
-              '/23348498264/dynwa_Web_Interstitial_1',
-              googletag.enums.OutOfPageFormat.INTERSTITIAL
-          );
-          if (interstitialSlot) {
-              interstitialSlot.addService(googletag.pubads());
-          }
-
-          // 底部锚定广告
-          anchorSlot = googletag.defineOutOfPageSlot(
-              '/23348498264/dynwa_Web_Anchor_1',
-              googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
-          );
-          if (anchorSlot) {
-              anchorSlot.addService(googletag.pubads());
-          }
-
-          googletag.pubads().enableSingleRequest();
-          googletag.pubads().collapseEmptyDivs();
-          googletag.enableServices();
-
-          googletag.display('div-gpt-ad-1777364426429-0');
-          googletag.display('div-gpt-ad-1777362616283-0');
-
-          if (interstitialSlot) {
-              googletag.display(interstitialSlot);
-          }
-
-          if (anchorSlot) {
-              googletag.display(anchorSlot);
-          }
-      });
-
-      function showInterstitial() {
-          if (interstitialSlot) {
-              googletag.cmd.push(function () {
-                  googletag.display(interstitialSlot);
-              });
-          }
-      }
-
-      function showAnchor() {
-          if (anchorSlot) {
-              googletag.cmd.push(function () {
-                  googletag.display(anchorSlot);
-              });
-          }
-      }
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+  var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+  ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D8L7QBJC77U12L5S9VR0');
+    ttq.page();
+    ttq.track('ViewContent');
+  }(window, document, 'ttq');
   </script>
 </head>
 
@@ -83,14 +33,9 @@
           <img src="./assets/Search@3x.png" alt="" srcset="" />
         </div>
 
-        <!-- <div class="menu-icons" onclick="switchMenu()">
-                    <img class="icon" src="./assets/fenlei.png" alt="" srcset="">
-                </div> -->
       </div>
       <div class="menuFloatContent hidden"></div>
     </header>
-
-    <div id="div-gpt-ad-1777364426429-0" style="min-width: 320px; min-height: 50px;"></div>
 
     <main class="main-content">
 
@@ -108,8 +53,6 @@
             }'>
       </swiper-container>
 
-      <div id="div-gpt-ad-1777362616283-0" style="min-width: 300px; min-height: 250px;"></div>
-
       <section class="hot font2">
         <h2>HOT</h2>
         <div class="hotGameGridBox"></div>
@@ -124,7 +67,6 @@
       <section class="threeD font2">
         <h2>
           <span class="categoryName">threeD</span>
-          <!-- <a href="search.html?category=3D" class="more-link">more &gt;</a> -->
 
           <div class="dropdown">
             <button class="dropdown-btn">
@@ -138,14 +80,6 @@
         <div class="threeDGameGridBox"></div>
       </section>
 
-      <!-- <section class="Adventure font2">
-                <h2>
-                    <span>Adventure</span>
-                    <a href="search.html?category=Adventure" class="more-link"></a>
-                </h2>
-                <div class="AdventureGameGridBox">
-                </div>
-            </section> -->
     </main>
 
 
