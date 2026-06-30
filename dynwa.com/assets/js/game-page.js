@@ -95,15 +95,17 @@ function initGamePage() {
       <p>${escapeHtml(generateGameDescription(game))}</p>
     </div>
 
-    <ins class="adsbygoogle"
-        style="display:block"
+    <div class="adsense-center-wrap">
+      <ins class="adsbygoogle"
+        style="display:block; margin:0 auto; text-align:center;"
         data-ad-client="ca-pub-2612403516171637"
         data-ad-slot="3301010122"
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
-    <script>
+      <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+      </script>
+    </div>
 
     <section class="game-play-area" aria-label="Game play area">
       ${iframeSection}
