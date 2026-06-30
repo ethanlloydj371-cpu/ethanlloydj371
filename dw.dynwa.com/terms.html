@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | PlayMiniFun</title>
+  <meta name="description" content="Terms of Service for PlayMiniFun casual games website.">
+  <link rel="canonical" href="https://example.com/terms.html">
+  <meta property="og:title" content="Terms of Service | PlayMiniFun">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/terms.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="terms">
+  <div id="header-mount"></div>
+
+  <main>
+    <div class="container static-page">
+      <h1>Terms of Service</h1>
+      <p>Last updated: June 2026</p>
+
+      <h2>Use of Website</h2>
+      <p>By accessing and using PlayMiniFun, you agree to these Terms of Service. This website provides free access to browser-based HTML5 games for personal, non-commercial entertainment purposes. You agree to use the website in a lawful manner and not to attempt to disrupt or interfere with the website's operation.</p>
+
+      <h2>Third-Party Games</h2>
+      <p>Games may be provided through third-party embedded links. All third-party game content belongs to its respective owner or provider. PlayMiniFun does not claim ownership of any third-party game content. We are not responsible for the content, functionality, or availability of third-party games.</p>
+
+      <h2>Intellectual Property</h2>
+      <p>The PlayMiniFun website design, layout, and original content are protected by copyright. Third-party game content, trademarks, and logos belong to their respective owners. Unauthorized reproduction or distribution of website content is prohibited.</p>
+
+      <h2>Advertising</h2>
+      <p>This website may display advertisements from third-party advertising providers. Advertisements are clearly labeled and are separate from game content. We are not responsible for the content of third-party advertisements.</p>
+
+      <h2>Disclaimer</h2>
+      <p>This website is provided "as is" without warranties of any kind. We do not guarantee uninterrupted access to the website or any specific game. We are not liable for any damages arising from the use of this website or third-party game content.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about these Terms of Service, please contact us at <a href="mailto:support@example.com" id="terms-email">support@example.com</a>.</p>
+    </div>
+  </main>
+
+  <div id="footer-mount"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/games-data.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadGames();
+      mountLayout("terms");
+      const el = document.getElementById("terms-email");
+      if (el) { el.textContent = SITE_CONFIG.email; el.href = "mailto:" + SITE_CONFIG.email; }
+    });
+  </script>
+</body>
+</html>

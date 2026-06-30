@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | PlayMiniFun</title>
+  <meta name="description" content="Contact PlayMiniFun for support, business cooperation, or game removal requests.">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <meta property="og:title" content="Contact | PlayMiniFun">
+  <meta property="og:description" content="Contact PlayMiniFun for support, business cooperation, or game removal requests.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="contact">
+  <div id="header-mount"></div>
+
+  <main>
+    <div class="container static-page">
+      <h1>Contact Us</h1>
+      <p>We welcome your questions, feedback, and inquiries. Please use the contact information below to reach us.</p>
+
+      <div class="contact-info">
+        <p><strong>General Support:</strong> <a href="mailto:support@example.com" id="contact-email">support@example.com</a></p>
+        <p><strong>Business Cooperation:</strong> For partnership and advertising inquiries, please email us at <a href="mailto:support@example.com">support@example.com</a> with the subject line "Business Inquiry".</p>
+        <p><strong>Game Removal Request:</strong> If you are a rights holder and would like a game removed from our website, please contact us with details about the game and your ownership claim.</p>
+        <p><strong>Copyright Issues:</strong> If you believe any content on our site infringes your copyright, please send a detailed notice to our email address including the specific URL and your contact information.</p>
+      </div>
+
+      <h2>Response Time</h2>
+      <p>We aim to respond to all inquiries within 2-3 business days. For urgent copyright or removal requests, please include "URGENT" in your email subject line.</p>
+    </div>
+  </main>
+
+  <div id="footer-mount"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/games-data.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadGames();
+      mountLayout("contact");
+      const emailEl = document.getElementById("contact-email");
+      if (emailEl) {
+        emailEl.textContent = SITE_CONFIG.email;
+        emailEl.href = "mailto:" + SITE_CONFIG.email;
+      }
+    });
+  </script>
+</body>
+</html>

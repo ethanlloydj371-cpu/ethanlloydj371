@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | PlayMiniFun</title>
+  <meta name="description" content="Privacy Policy for PlayMiniFun casual games website.">
+  <link rel="canonical" href="https://example.com/privacy-policy.html">
+  <meta property="og:title" content="Privacy Policy | PlayMiniFun">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/privacy-policy.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="privacy">
+  <div id="header-mount"></div>
+
+  <main>
+    <div class="container static-page">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: June 2026</p>
+
+      <h2>Information We Collect</h2>
+      <p>PlayMiniFun is a static website that does not require user registration. We may collect basic analytics data such as page views, browser type, and device information through third-party analytics services. We do not collect personal information unless you voluntarily contact us via email.</p>
+
+      <h2>Cookies</h2>
+      <p>Our website may use cookies to improve your browsing experience and for analytics purposes. You can manage or disable cookies through your browser settings. Disabling cookies may affect some website functionality.</p>
+
+      <h2>Third-Party Games</h2>
+      <p>Some games may be loaded from third-party providers through iframe links. These third-party providers may collect data according to their own privacy policies. We do not control the data collection practices of third-party game providers. We encourage you to review the privacy policies of these providers.</p>
+
+      <h2>Advertising</h2>
+      <p>We may display advertisements from third-party advertising providers such as Google AdSense in the future. These advertising providers may use cookies and similar technologies to serve ads based on your browsing activity. You can opt out of personalized advertising through your browser settings or the advertising provider's opt-out tools.</p>
+
+      <h2>Analytics</h2>
+      <p>We may use analytics services to understand how visitors use our website. These services may collect anonymous usage data to help us improve the website experience.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>Our website is intended for a general audience. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child, please contact us immediately.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@example.com" id="privacy-email">support@example.com</a>.</p>
+    </div>
+  </main>
+
+  <div id="footer-mount"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/games-data.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadGames();
+      mountLayout("privacy");
+      const el = document.getElementById("privacy-email");
+      if (el) { el.textContent = SITE_CONFIG.email; el.href = "mailto:" + SITE_CONFIG.email; }
+    });
+  </script>
+</body>
+</html>
