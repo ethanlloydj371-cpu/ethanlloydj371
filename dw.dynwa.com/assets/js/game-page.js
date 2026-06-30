@@ -95,17 +95,18 @@ function initGamePage() {
       <p>${escapeHtml(generateGameDescription(game))}</p>
     </div>
 
-    <div class="adsense-center-wrap">
+    <div style="text-align:center;">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2612403516171637"
-        crossorigin="anonymous"></script>
+          crossorigin="anonymous"></script>
+      <!-- dw.dynwa.com_display_02 -->
       <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-2612403516171637"
-        data-ad-slot="2091213696"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
+          style="display:block"
+          data-ad-client="ca-pub-2612403516171637"
+          data-ad-slot="6910559678"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
       <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+          (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
 
