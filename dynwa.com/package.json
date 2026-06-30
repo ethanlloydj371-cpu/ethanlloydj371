@@ -1,0 +1,8 @@
+{
+  "name": "playminifun",
+  "version": "1.0.0",
+  "description": "PlayMiniFun - Free HTML5 Casual Games Website",
+  "scripts": {
+    "sitemap": "node scripts/generate-sitemap.js"
+  }
+}

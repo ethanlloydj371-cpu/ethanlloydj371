@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | PlayMiniFun</title>
+  <meta name="description" content="Learn about PlayMiniFun, a free online casual HTML5 games website.">
+  <link rel="canonical" href="https://example.com/about.html">
+  <meta property="og:title" content="About | PlayMiniFun">
+  <meta property="og:description" content="Learn about PlayMiniFun, a free online casual HTML5 games website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="about">
+  <div id="header-mount"></div>
+
+  <main>
+    <div class="container static-page">
+      <h1>About PlayMiniFun</h1>
+      <p>PlayMiniFun is a casual HTML5 games website created for players who enjoy simple, fast, and browser-based games. Our goal is to make it easy to discover and play fun games without downloading or installing anything.</p>
+
+      <h2>What We Offer</h2>
+      <p>We curate a collection of free browser games spanning multiple categories including puzzle, arcade, action, sports, racing, and more. Every game on our site runs directly in your web browser using HTML5 technology.</p>
+
+      <h2>Mobile-Friendly Gaming</h2>
+      <p>All games on PlayMiniFun are designed to work on mobile-friendly browsers. Whether you are on a phone, tablet, or desktop computer, you can enjoy casual gameplay anytime, anywhere.</p>
+
+      <h2>Third-Party Game Links</h2>
+      <p>Some games on our website are provided through third-party embedded game links. These games are loaded directly from their original providers via iframe. We do not host, modify, or redistribute game source files. All game content belongs to its respective owner or provider.</p>
+
+      <h2>Our Mission</h2>
+      <p>We believe casual gaming should be accessible to everyone. No downloads, no accounts, no hassle — just open a game and start playing. We are committed to providing a safe, family-friendly gaming experience for players of all ages.</p>
+    </div>
+  </main>
+
+  <div id="footer-mount"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/games-data.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadGames();
+      mountLayout("about");
+    });
+  </script>
+</body>
+</html>
