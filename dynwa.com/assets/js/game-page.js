@@ -96,6 +96,8 @@ function initGamePage() {
     </div>
 
     <div class="adsense-center-wrap">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2612403516171637"
+        crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
         style="display:block; margin:0 auto; text-align:center;"
         data-ad-client="ca-pub-2612403516171637"
