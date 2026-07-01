@@ -39,6 +39,8 @@ function initGamePage() {
     url: `${SITE_CONFIG.domain}/game.html?slug=${game.slug}`
   });
 
+  trackTikTokViewContent(game);
+
   const howToPlay = game.instructions
     ? game.instructions
     : "Use your mouse, keyboard, or touch controls to play this game. Follow the in-game instructions, complete the challenge, and try to achieve your best score.";
@@ -139,7 +141,21 @@ function initGamePage() {
     (adsbygoogle = window.adsbygoogle || []).push({});
   } catch (e) {}
 
-  if (game.playable) initFullscreen();
+if (game.playable) initFullscreen();
+}
+
+function trackTikTokViewContent(game) {
+  if (!window.ttq || !game) return;
+
+  try {
+    window.ttq.track("ViewContent", {
+      content_type: "game",
+      content_name: game.title,
+      content_id: game.id || game.slug,
+      description: truncateText(game.description || game.title, 100),
+      category: game.categories && game.categories.length ? game.categories[0] : "Game"
+    });
+  } catch (e) {}
 }
 
 function initFullscreen() {
